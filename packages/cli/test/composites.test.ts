@@ -6,9 +6,7 @@ import { EncodedCompositeDefinition } from '@composedb/types'
 import { Composite } from '@composedb/devtools'
 import fs from 'fs-extra'
 import stripAnsi from 'strip-ansi'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import { TEST_OUTPUT_DIR_PATH } from '../globalConsts.js' // not a module
+import { dir } from 'tmp-promise'
 
 const MODEL1_JSON =
   '{"version": "1.0", "name":"Model1","accountRelation":"list","schema":{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"stringPropName":{"type":"string","maxLength":80}},"additionalProperties":false,"required":["stringPropName"]}}'
@@ -310,7 +308,8 @@ describe('composites', () => {
     }, 60000)
 
     test('composite compilation succeeds', async () => {
-      const dirpath = TEST_OUTPUT_DIR_PATH.pathname
+      const tmpDir = await dir({ unsafeCleanup: true })
+      const dirpath = tmpDir.path
       const filename = 'runtime.composite.profiles'
       const compileWithJustCompositePath = await execa('bin/run.js', [
         'composite:compile',
@@ -332,6 +331,7 @@ describe('composites', () => {
       expect(jsonRepresentation).toMatchSnapshot()
       expect(jsRepresentation).toMatchSnapshot()
       expect(tsRepresentation).toMatchSnapshot()
+      await tmpDir.cleanup()
     }, 60000)
   })
 })

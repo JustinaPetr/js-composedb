@@ -83,6 +83,7 @@ importers:
       ora: ^6.1.0
       strip-ansi: ~7.0.1
       term-size: ^3.0.2
+      tmp-promise: ^3.0.3
       uint8arrays: ^4.0.3
     dependencies:
       '@ceramicnetwork/3id-did-resolver': 2.16.0
@@ -124,6 +125,7 @@ importers:
       jest-dev-server: 7.0.1
       oclif: 3.7.0
       strip-ansi: 7.0.1
+      tmp-promise: 3.0.3
 
   packages/client:
     specifiers:
