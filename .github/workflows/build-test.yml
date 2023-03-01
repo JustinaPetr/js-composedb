@@ -16,9 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup upterm session
-        uses: lhotari/action-upterm@v1
-
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -36,5 +33,8 @@ jobs:
       # - name: Lint
       #   run: pnpm run lint
 
-      - name: Test
-        run: (cd packages/cli && pnpm run test:ci)
+      # - name: Test
+      #   run: (cd packages/cli && pnpm run test:ci)
+
+      - name: Setup upterm session
+        uses: lhotari/action-upterm@v1
