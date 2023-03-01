@@ -47,7 +47,7 @@ importers:
   packages/cli:
     specifiers:
       '@ceramicnetwork/3id-did-resolver': ^2.16.0
-      '@ceramicnetwork/cli': ^2.26.0
+      '@ceramicnetwork/cli': ^2.28.0
       '@ceramicnetwork/common': ^2.23.0
       '@ceramicnetwork/http-client': ^2.20.0
       '@ceramicnetwork/stream-model': ^1.5.0
@@ -58,7 +58,7 @@ importers:
       '@composedb/devtools-node': workspace:^0.4.3
       '@composedb/runtime': workspace:^0.4.1
       '@composedb/types': workspace:^0.4.3
-      '@oclif/core': ^2.3.1
+      '@oclif/core': ^2.4.0
       '@oclif/plugin-help': ^5.2.6
       '@oclif/plugin-version': ^1.2.1
       '@swc-node/register': ^1.6.2
@@ -95,7 +95,7 @@ importers:
       '@composedb/devtools': link:../devtools
       '@composedb/devtools-node': link:../devtools-node
       '@composedb/runtime': link:../runtime
-      '@oclif/core': 2.3.1
+      '@oclif/core': 2.4.0
       '@oclif/plugin-help': 5.2.6
       '@oclif/plugin-version': 1.2.1
       cli-table3: 0.6.3
@@ -111,7 +111,7 @@ importers:
       term-size: 3.0.2
       uint8arrays: 4.0.3
     devDependencies:
-      '@ceramicnetwork/cli': 2.26.0
+      '@ceramicnetwork/cli': 2.28.0
       '@ceramicnetwork/common': 2.23.0
       '@composedb/types': link:../types
       '@swc-node/register': 1.6.2
@@ -269,7 +269,7 @@ importers:
 
   packages/jest-environment-composedb:
     specifiers:
-      '@ceramicnetwork/core': ^2.29.0
+      '@ceramicnetwork/core': ^2.30.0
       dids: ^4.0.0
       ipfs-core: ^0.17.0
       jest-environment-node: ^29.4.3
@@ -278,7 +278,7 @@ importers:
       tmp-promise: ^3.0.3
       uint8arrays: ^4.0.3
     dependencies:
-      '@ceramicnetwork/core': 2.29.0
+      '@ceramicnetwork/core': 2.30.0
       dids: 4.0.0
       ipfs-core: 0.17.0
       jest-environment-node: 29.4.3
@@ -2041,14 +2041,14 @@ packages:
       - encoding
       - utf-8-validate
 
-  /@ceramicnetwork/cli/2.26.0:
-    resolution: {integrity: sha512-NqQLQpTtoZrbo3lruhzZFNJVuux5ueuW5Bk1nz2gBBYZpX1guQ55U3NpSDZM/RXo/BoG0nU7MEUi2LWuoflNMQ==}
+  /@ceramicnetwork/cli/2.28.0:
+    resolution: {integrity: sha512-jpjuN+nzhJYGxyvAdnFADu6J2xICM0clGf7agzSmhduUmXV5cNGu5UW0h+7LlW4iiK1ddUWlmYYUh1nzWKulnQ==}
     hasBin: true
     dependencies:
       '@awaitjs/express': 0.9.0_express@4.18.2
       '@ceramicnetwork/3id-did-resolver': 2.16.0
       '@ceramicnetwork/common': 2.23.0
-      '@ceramicnetwork/core': 2.29.0
+      '@ceramicnetwork/core': 2.30.0
       '@ceramicnetwork/http-client': 2.20.0
       '@ceramicnetwork/ipfs-daemon': 2.16.0
       '@ceramicnetwork/logger': 2.5.0
@@ -2056,7 +2056,7 @@ packages:
       '@ceramicnetwork/stream-tile': 2.19.0
       '@ceramicnetwork/streamid': 2.14.0
       '@stablelib/random': 1.0.2
-      aws-sdk: 2.1321.0
+      aws-sdk: 2.1325.0
       commander: 9.5.0
       cors: 2.8.5
       did-resolver: 4.0.1
@@ -2075,7 +2075,7 @@ packages:
       picocolors: 1.0.0
       pkh-did-resolver: 1.2.0
       reflect-metadata: 0.1.13
-      s3leveldown: 2.2.2_de2nl5x2vv2g2nj6ipweicazf4
+      s3leveldown: 2.2.2_dz3hr62m4dywxaz6gqdcakhluy
       safe-did-resolver: 2.0.0
       stream-to-array: 2.3.0
       typedjson: 1.8.0
@@ -2117,8 +2117,8 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@ceramicnetwork/core/2.29.0:
-    resolution: {integrity: sha512-weyIlvgp1vp+sk3vc4WxSWZYMSQqD7hnQDELDHqQPQWFtivqlY4cCAUEl1IKnFOprIT8ULCSq6XV0pXGyNan1A==}
+  /@ceramicnetwork/core/2.30.0:
+    resolution: {integrity: sha512-LH7sFSGfuyVcU+oHEtCGipC+A+5dHg+FHSGaqeGF8XnjICrNKwgCwID/XqXaCOX9r0ApLv4iolcbspkQAnX0nw==}
     dependencies:
       '@ceramicnetwork/anchor-listener': 1.8.0
       '@ceramicnetwork/anchor-utils': 1.6.0
@@ -2144,7 +2144,7 @@ packages:
       '@stablelib/sha256': 1.0.1
       '@stablelib/uuid': 1.0.2
       ajv: 8.12.0
-      ajv-formats: 2.1.1_ajv@8.12.0
+      ajv-formats: 2.1.1
       await-semaphore: 0.1.3
       cartonne: 1.0.3
       dids: 4.0.0
@@ -2289,7 +2289,7 @@ packages:
       '@ceramicnetwork/stream-model': 1.5.0
       '@ceramicnetwork/streamid': 2.14.0
       ajv: 8.12.0
-      ajv-formats: 2.1.1_ajv@8.12.0
+      ajv-formats: 2.1.1
       fast-json-patch: 3.1.1
       lodash.clonedeep: 4.5.0
       uint8arrays: 4.0.3
@@ -2304,7 +2304,7 @@ packages:
       '@ceramicnetwork/stream-model-instance': 1.5.0
       '@ceramicnetwork/streamid': 2.14.0
       ajv: 8.12.0
-      ajv-formats: 2.1.1_ajv@8.12.0
+      ajv-formats: 2.1.1
       fast-json-patch: 3.1.1
       lodash.clonedeep: 4.5.0
       lru_map: 0.4.1
@@ -2348,7 +2348,7 @@ packages:
       '@ceramicnetwork/stream-tile': 2.19.0
       '@ceramicnetwork/streamid': 2.14.0
       ajv: 8.12.0
-      ajv-formats: 2.1.1_ajv@8.12.0
+      ajv-formats: 2.1.1
       fast-json-patch: 3.1.1
       lodash.clonedeep: 4.5.0
       lru_map: 0.4.1
@@ -4640,6 +4640,21 @@ packages:
       node-forge: 1.3.1
       protons-runtime: 4.0.2
       uint8arrays: 4.0.3
+    dev: false
+
+  /@libp2p/crypto/1.0.12:
+    resolution: {integrity: sha512-IvTKqI+7O9sTd7K9JSIRsOj/oruKj66qSopbSWkUd6KkcrYvm5vnreb39XPP+nitZcZFQyXj/ZDqTidAWWfYAg==}
+    engines: {node: '>=16.0.0', npm: '>=7.0.0'}
+    dependencies:
+      '@libp2p/interface-keys': 1.0.7
+      '@libp2p/interfaces': 3.3.1
+      '@noble/ed25519': 1.7.3
+      '@noble/secp256k1': 1.7.1
+      multiformats: 11.0.1
+      node-forge: 1.3.1
+      protons-runtime: 4.0.2
+      uint8arrays: 4.0.3
+    dev: true
 
   /@libp2p/delegated-content-routing/3.0.1:
     resolution: {integrity: sha512-KEj6g0Ag0hjVzj8ljjVlf47nNbZuRtwMPH4sjySOwfnpvtQjPtjT8Lz7PkANtQeL+qG0Zd15CNFxD88gIwmVCg==}
@@ -5527,6 +5542,11 @@ packages:
 
   /@noble/ed25519/1.7.1:
     resolution: {integrity: sha512-Rk4SkJFaXZiznFyC/t77Q0NKS4FL7TLJJsVG2V2oiEq3kJVeTdxysEe/yRWSpnWMe808XRDJ+VFh5pt/FN5plw==}
+    dev: false
+
+  /@noble/ed25519/1.7.3:
+    resolution: {integrity: sha512-iR8GBkDt0Q3GyaVcIu7mSsVIqnFbkbRzGLWlvhwunacoLwt4J3swfKhfaM6rN6WY+TBGoYT1GtT1mIh2/jGbRQ==}
+    dev: true
 
   /@noble/hashes/1.2.0:
     resolution: {integrity: sha512-FZfhjEDbT5GRswV3C6uvLPHMiVD6lQBmpoX5+eSiPaMTXte/IKqI5dykDxzZB/WBeK/CDuQRBWarPdi3FNY2zQ==}
@@ -5715,8 +5735,8 @@ packages:
       tslib: 2.5.0
     dev: true
 
-  /@oclif/core/2.3.1:
-    resolution: {integrity: sha512-18CkjjF16hwhBd/42z+0CHAwvZlBfpyCmdZxpasN/od8c/hdm0oDEJvVB33/xD0LDYg8glKoQ5zVNVvPM/uJ/Q==}
+  /@oclif/core/2.4.0:
+    resolution: {integrity: sha512-wWUnOOfQQty0k1Cstm/iWW6pbG0mHzU7rcUtab2Sni9kjBPCcy6ENTgpsWbb/WdITopqtXmvpYII2fgcjKdzUA==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@types/cli-progress': 3.11.0
@@ -5752,14 +5772,14 @@ packages:
     resolution: {integrity: sha512-nvpSbIOGtPIct3+OqXca3OIu5liyIynascncAXZy4JDD7z8rIGZ3NYJH2M4JhMVyGxCDZxQuLVsdALyIt67G5g==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      '@oclif/core': 2.3.1
+      '@oclif/core': 2.4.0
 
   /@oclif/plugin-not-found/2.3.20:
     resolution: {integrity: sha512-U93rjsL5Z2AWUtURx6R83tNottH6jAsUIGFBu+ZdM4p3bPOPCg9Kmofca6xudiV7ppWxbG5EejZOUGYcdKa/SA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@oclif/color': 1.0.4
-      '@oclif/core': 2.3.1
+      '@oclif/core': 2.4.0
       fast-levenshtein: 3.0.0
       lodash: 4.17.21
     dev: true
@@ -5768,14 +5788,14 @@ packages:
     resolution: {integrity: sha512-Xb7MECv9uSaxIuzPbgJnOZEf0gnHlcLdncBkJCn5vsMnt1hC91j65feGeY8c68vsrAi6SumOfI8C63v8gC+FEA==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@oclif/core': 2.3.1
+      '@oclif/core': 2.4.0
     dev: false
 
   /@oclif/plugin-warn-if-update-available/2.0.28:
     resolution: {integrity: sha512-j1xZYlYfz9arRGwwlxT0jPWqZX1SqZV0jmqDUBLSEPRu7Zsh9UNX2NxuNQx96wO4K0paPg/hFvx9McAEaS4+gQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      '@oclif/core': 2.3.1
+      '@oclif/core': 2.4.0
       chalk: 4.1.2
       debug: 4.3.4
       fs-extra: 9.1.0
@@ -7812,17 +7832,6 @@ packages:
         optional: true
     dependencies:
       ajv: 8.12.0
-    dev: false
-
-  /ajv-formats/2.1.1_ajv@8.12.0:
-    resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
-    peerDependencies:
-      ajv: ^8.0.0
-    peerDependenciesMeta:
-      ajv:
-        optional: true
-    dependencies:
-      ajv: 8.12.0
 
   /ajv-keywords/3.5.2_ajv@6.12.6:
     resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==}
@@ -8001,7 +8010,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       delegates: 1.0.0
-      readable-stream: 3.6.0
+      readable-stream: 3.6.1
 
   /are-we-there-yet/3.0.1:
     resolution: {integrity: sha512-QZW4EDmGwlYur0Yyf/b2uGucHQMa8aFUP7eu9ddR73vvhFyt4V0Vl3QHPcTNJ8l6qYOBdxgXdnBXQrHilfRQBg==}
@@ -8143,6 +8152,22 @@ packages:
 
   /aws-sdk/2.1321.0:
     resolution: {integrity: sha512-VBNsTl13/JWYpvo7H9BgAUMZam4BxKNhlt7GlsuVdK30MdirIEsB0ZeqGeAO9KXRBLCv/FUnF/nV73+97qLKWw==}
+    engines: {node: '>= 10.0.0'}
+    dependencies:
+      buffer: 4.9.2
+      events: 1.1.1
+      ieee754: 1.1.13
+      jmespath: 0.16.0
+      querystring: 0.2.0
+      sax: 1.2.1
+      url: 0.10.3
+      util: 0.12.5
+      uuid: 8.0.0
+      xml2js: 0.4.19
+    dev: true
+
+  /aws-sdk/2.1325.0:
+    resolution: {integrity: sha512-ztg9HG5aoUHTprY+/eqjqb25E4joCgz+8ToxsP4OSKFQCtaBcF6my03j4e/J2j3fmpPifJnZSPMu4kV7DBj8WA==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       buffer: 4.9.2
@@ -8512,7 +8537,7 @@ packages:
     dependencies:
       buffer: 6.0.3
       inherits: 2.0.4
-      readable-stream: 3.6.0
+      readable-stream: 3.6.1
     dev: false
 
   /blakejs/1.2.1:
@@ -8595,7 +8620,7 @@ packages:
   /borsh/0.6.0:
     resolution: {integrity: sha512-sl5k89ViqsThXQpYa9XDtz1sBl3l1lI313cFUY1HKr+wvMILnb+58xpkqTNrYbelh99dY7K8usxoCusQmqix9Q==}
     dependencies:
-      bn.js: 5.2.1
+      bn.js: 5.2.0
       bs58: 4.0.1
       text-encoding-utf-8: 1.0.2
 
@@ -8688,7 +8713,7 @@ packages:
     dependencies:
       buffer-xor: 1.0.3
       cipher-base: 1.0.4
-      create-hash: 1.2.0
+      create-hash: 1.1.3
       evp_bytestokey: 1.0.3
       inherits: 2.0.4
 
@@ -9621,7 +9646,7 @@ packages:
     resolution: {integrity: sha512-23osI7H2SH6Zm4g7A7BTM9+3XicGZkemw00eEhrFViR3EdGru+azj2fMKf9J2zWMGO7AfPgYRdIRL96kkdy8QA==}
     dependencies:
       cipher-base: 1.0.4
-      create-hash: 1.2.0
+      create-hash: 1.1.3
       inherits: 2.0.4
       ripemd160: 2.0.2
       safe-buffer: 5.2.1
@@ -12150,7 +12175,7 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
     dependencies:
-      minimist: 1.2.7
+      minimist: 1.2.8
       neo-async: 2.6.2
       source-map: 0.6.1
       wordwrap: 1.0.0
@@ -14831,7 +14856,7 @@ packages:
       '@ipld/dag-cbor': 9.0.0
       '@ipld/dag-json': 10.0.1
       '@ipld/dag-pb': 4.0.2
-      '@libp2p/crypto': 1.0.11
+      '@libp2p/crypto': 1.0.12
       '@libp2p/logger': 2.0.5
       '@libp2p/peer-id': 2.0.2
       '@multiformats/multiaddr': 11.4.0
@@ -15746,6 +15771,7 @@ packages:
 
   /minimist/1.2.7:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
+    dev: false
 
   /minimist/1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
@@ -16390,7 +16416,7 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      '@oclif/core': 2.3.1
+      '@oclif/core': 2.4.0
       '@oclif/plugin-help': 5.2.6
       '@oclif/plugin-not-found': 2.3.20
       '@oclif/plugin-warn-if-update-available': 2.0.28
@@ -16711,6 +16737,12 @@ packages:
   /p-timeout/6.1.0:
     resolution: {integrity: sha512-s0y6Le9QYGELLzNpFIt6h8B2DHTVUDLStvxtvRMSKNKeuNVVWby2dZ+pIJpW4/pWr5a3s8W85wBNtc0ZA+lzCg==}
     engines: {node: '>=14.16'}
+    dev: false
+
+  /p-timeout/6.1.1:
+    resolution: {integrity: sha512-yqz2Wi4fiFRpMmK0L2pGAU49naSUaP23fFIQL2Y6YT+qDGPoFwpvgQM/wzc6F8JoenUkIlAFa4Ql7NguXBxI7w==}
+    engines: {node: '>=14.16'}
+    dev: true
 
   /p-transform/1.3.0:
     resolution: {integrity: sha512-UJKdSzgd3KOnXXAtqN5+/eeHcvTn1hBkesEmElVgvO/NAYcxAvmjzIGmnNd3Tb/gRAvMBdNRFD4qAWdHxY6QXg==}
@@ -16730,7 +16762,7 @@ packages:
     resolution: {integrity: sha512-nkxeZInKET8e78NTtqBgxpnxDLbiCiQnGdoTnkLkluovfTyI5UTCrGwPNOr6ewJ90NpWyxEFt1ToZ96LmIXXHQ==}
     engines: {node: '>=12'}
     dependencies:
-      p-timeout: 6.1.0
+      p-timeout: 6.1.1
     dev: true
 
   /package-json/6.5.0:
@@ -18194,6 +18226,7 @@ packages:
       inherits: 2.0.4
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
+    dev: false
 
   /readable-stream/3.6.1:
     resolution: {integrity: sha512-+rQmrWMYGA90yenhTYsLWAsLsqVC8osOw6PKE1HDYiO0gdPeKe/xDHNzIAIn4C91YQ6oenEhfYqqc1883qHbjQ==}
@@ -18217,7 +18250,7 @@ packages:
     resolution: {integrity: sha512-ePeK6cc1EcKLEhJFt/AebMCLL+GgSKhuygrZ/GLaKZYEecIgIECf4UaUuaByiGtzckwR4ain9VzUh95T1exYGw==}
     engines: {node: '>=8'}
     dependencies:
-      readable-stream: 3.6.0
+      readable-stream: 3.6.1
     dev: true
 
   /readdir-scoped-modules/1.1.0:
@@ -18636,7 +18669,7 @@ packages:
     dependencies:
       tslib: 2.5.0
 
-  /s3leveldown/2.2.2_de2nl5x2vv2g2nj6ipweicazf4:
+  /s3leveldown/2.2.2_dz3hr62m4dywxaz6gqdcakhluy:
     resolution: {integrity: sha512-pTzJ8Pi5eTJGy8AsiNrdM0AltccbKSaIeaXvxXzAPqBED1JdmQDr2zkVn6rRYFYYgLQayysko2Es5DjL5TEOrw==}
     engines: {node: '>=6'}
     peerDependencies:
@@ -18645,7 +18678,7 @@ packages:
     dependencies:
       '@types/abstract-leveldown': 5.0.2
       abstract-leveldown: 6.3.0
-      aws-sdk: 2.1321.0
+      aws-sdk: 2.1325.0
       debug: 4.3.4
       inherits: 2.0.4
       levelup: 5.1.1

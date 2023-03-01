@@ -108,9 +108,20 @@
               "label": "Schemas"
             },
             {
-              "type": "doc",
-              "id": "guides/data-modeling/relations",
-              "label": "Relations"
+              "type": "category",
+              "collapsed": true,
+              "label": "Relations",
+              "link": {
+                "type": "doc",
+                "id": "guides/data-modeling/relations"
+              },
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "guides/data-modeling/relations-container-of-items",
+                  "label": "Container of Items"
+                }
+              ]
             }
           ]
         },
@@ -166,6 +177,42 @@
               "label": "User Sessions"
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "collapsed": false,
+      "label": "ComposeDB Server",
+      "link": {
+        "type": "doc",
+        "id": "guides/composedb-server/composedb-server"
+      },
+      "items": [
+        {
+          "type": "doc",
+          "id": "guides/composedb-server/running-locally",
+          "label": "Running Locally"
+        },
+        {
+          "type": "doc",
+          "id": "guides/composedb-server/running-in-the-cloud",
+          "label": "Running in the Cloud"
+        },
+        {
+          "type": "doc",
+          "id": "guides/composedb-server/server-configurations",
+          "label": "Server Configurations"
+        },
+        {
+          "type": "doc",
+          "id": "guides/composedb-server/access-mainnet",
+          "label": "Access Mainnet"
+        },
+        {
+          "type": "doc",
+          "id": "guides/composedb-server/data-storage",
+          "label": "Data Storage"
         }
       ]
     },
